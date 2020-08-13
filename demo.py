@@ -1,6 +1,7 @@
 from escpos.printer import Usb
 printer = Usb(0x0416, 0x5011, 0, profile="ZJ-5870")
 printer.text("this is A test")
+printer.cut()
 
 # with printer() as that:
 #     that.write('Hello, world!\n\n')
