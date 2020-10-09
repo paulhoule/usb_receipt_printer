@@ -1,6 +1,6 @@
 from escpos.printer import Usb
 from pathlib import Path
-image = Path("/tamamo-no-mae/lusamine-bitmap.png")
+image = Path("/tamamo-no-mae/me-cloudy.png")
 printer = Usb(0x0416, 0x5011, 0, profile="ZJ-5870")
 printer.image(image);
 printer.cut()
